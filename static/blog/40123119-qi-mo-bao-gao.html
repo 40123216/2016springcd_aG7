@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>40123255 cdw18報告 - CD期末考週 網頁 (虎尾科大MDE)</title>
+    <title>40123119 期末報告 - CD期末考週 網頁 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,22 +166,22 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./40123255-cdw18bao-gao.html">
+<link rel="canonical" href="./40123119-qi-mo-bao-gao.html">
 
-        <meta name="author" content="40123255" />
-        <meta name="keywords" content="40123255,cdw18" />
+        <meta name="author" content="40123119" />
+        <meta name="keywords" content="40123119,cdw18" />
         <meta name="description" content="啟動 cdw18 協同專案" />
 
         <meta property="og:site_name" content="CD期末考週 網頁 (虎尾科大MDE)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="40123255 cdw18報告"/>
-        <meta property="og:url" content="./40123255-cdw18bao-gao.html"/>
+        <meta property="og:title" content="40123119 期末報告"/>
+        <meta property="og:url" content="./40123119-qi-mo-bao-gao.html"/>
         <meta property="og:description" content="啟動 cdw18 協同專案"/>
-        <meta property="article:published_time" content="2016-06-26" />
+        <meta property="article:published_time" content="2016-06-28" />
             <meta property="article:section" content="ag7" />
-            <meta property="article:tag" content="40123255" />
+            <meta property="article:tag" content="40123119" />
             <meta property="article:tag" content="cdw18" />
-            <meta property="article:author" content="40123255" />
+            <meta property="article:author" content="40123119" />
 
 
     <!-- Bootstrap -->
@@ -284,10 +284,10 @@ CD期末考週 網頁 (虎尾科大MDE)            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./40123255-cdw18bao-gao.html"
+                    <a href="./40123119-qi-mo-bao-gao.html"
                        rel="bookmark"
-                       title="Permalink to 40123255 cdw18報告">
-                        40123255 cdw18報告
+                       title="Permalink to 40123119 期末報告">
+                        40123119 期末報告
                     </a>
                 </h1>
             </header>
@@ -297,15 +297,15 @@ CD期末考週 網頁 (虎尾科大MDE)            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-06-26T10:10:43.240000+08:00"> 週日 26 六月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-06-28T16:50:30.330000+08:00"> 週二 28 六月 2016</time>
     </span>
             <span class="label label-default">By</span>
-            <a href="./author/40123255.html"><i class="fa fa-user"></i> 40123255</a>
+            <a href="./author/40123119.html"><i class="fa fa-user"></i> 40123119</a>
 
 
 
 <span class="label label-default">Tags</span>
-	<a href="./tag/40123255.html">40123255</a>
+	<a href="./tag/40123119.html">40123119</a>
         /
 	<a href="./tag/cdw18.html">cdw18</a>
     
@@ -314,7 +314,16 @@ CD期末考週 網頁 (虎尾科大MDE)            </a>
                 <p>啟動 cdw18 協同專案</p>
 
 
-<p>cdw18心得</p>
+<p>2D鍊條組合 :
+<a href="http://40123119w18-cadp13ag7.rhcloud.com/">http://40123119w18-cadp13ag7.rhcloud.com/</a></p></p>
+<p>2D齒輪嚙合 :
+<a href="http://40123119w18-cadp13ag7.rhcloud.com/">http://40123119w18-cadp13ag7.rhcloud.com/</a></p></p>
+<hr />
+<p>第十六週心得 : </p>
+<p>一開始的網頁原始碼，是在畫布上呈現一個齒輪，但是要如何做到三個齒輪嚙合呢?首先先將一開始的齒輪參數蓋掉，隨後在空白處補上cgo.render(gear)# render 繪出靜態正齒輪輪廓，deg = math.pi/180，Line = cobj(['M', cx, cy, 'L', cx+prmath.cos(180/ndeg), cy+prmath.sin(180/ndeg)], "PARH", {'strokeColor':'blue' ,'linWidth':4})，cgo.render(Line)# 接著繪製齒輪的基準線，接著將畫布的寬高比除與2以及齒輪的比例縮小五倍，否則三個齒輪會超出畫布的大小，接著分別打上spur(cx-118, cy, m, n, pa)，spur(cx, cy, m, 11, pa)，spur(cx+80, cy, m, 13, pa)，依序為x,y中心位置的距離、模數、齒數、壓力角，嚙合時齒輪間模數與壓力角相同方能嚙合，接著改上要求的齒數，以及嚙合需要調整齒輪中心距離位置以及齒輪轉角，為了能讓齒輪更精準的嚙合。</p>
+<hr />
+<p>第十七週心得 :</p>
+<p>因為還不太熟悉onshape的操作功能，所以剛開始是先看老師的步驟以及老師在kmolab上給的網址在一個步驟一步驟看如何建立基底，軸心，齒輪在來做嚙合。不過這周先上傳之前所做的2D鍊條，本鍊條我有增加鏈條數目，這學期以來上傳成果要呈現給老師看的方式都是以openshfit建python3.3，在建金鑰，在利用command逐步的打指令先是在git push wsgi.py的檔案，不過我們這組有發現，每要發一個成果，就必須再創一個openshfit，實在麻煩，而且下的URL還不能一樣，會使成果呈現顯得很亂沒有連貫性，所以我們開始向40123149同學的做法去做討論和學習，期許在本次的重修上學到的不只是老師上課所要教給我們的腳踏車一些機構的組立，還學習到更多可以在網路呈現的工具，相信在往後這些一定都是不可獲缺的技能。</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -330,28 +339,28 @@ CD期末考週 網頁 (虎尾科大MDE)            </a>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./40123149-cdw18bao-gao.html">
-                            40123149 cdw18報告
+                        <a href="./40123255-qi-mo-bao-gao.html">
+                            40123255 期末報告
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./40123141-cdw18bao-gao.html">
-                            40123141 cdw18報告
+                        <a href="./40123227-qi-mo-bao-gao.html">
+                            40123227 期末報告
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./40123119-cdw18bao-gao.html">
-                            40123119 cdw18報告
+                        <a href="./40123216-qi-mo-bao-gao.html">
+                            40123216 期末報告
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./40123255-cdw18bao-gao.html">
-                            40123255 cdw18報告
+                        <a href="./40123149-qi-mo-bao-gao.html">
+                            40123149 期末報告
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./40123216-cdw18bao-gao.html">
-                            40123216 cdw18報告
+                        <a href="./40123141-qi-mo-bao-gao.html">
+                            40123141 期末報告
                         </a>
                     </li>
                 </ul>
